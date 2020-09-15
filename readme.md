@@ -1,8 +1,10 @@
 Steps for connecting django with mysql in windows
-
+<br>
 
 1)Got to settings.py file in the database section change dbsqlite3 to mysql.
 by doing
+<br>
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -13,11 +15,13 @@ DATABASES = {
         'PORT': 'PORT NO OF MYSQL'
     }
 }
+<br>
 
 2)Installing Mysqlclient for windows
+<br>
 a)Go to this <a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient">link</a>
-b)Download this file "mysqlclient‑1.4.6‑cp37‑cp37m‑win32.whl"
-c)Install it using
+<br>b)Download this file "mysqlclient‑1.4.6‑cp37‑cp37m‑win32.whl"
+<br>c)Install it using
 pip install mysqlclient‑1.4.6‑cp37‑cp37m‑win32.whl
-4)Execute the command->python manage.py migrate
-5)Exceute ->python manage.py runserver
+<br>4)Execute the command->python manage.py migrate
+<br>5)Exceute ->python manage.py runserver
